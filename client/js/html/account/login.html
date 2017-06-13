@@ -1,0 +1,23 @@
+<h1>GM后台登陆</h1>
+<div layout="row" layout-align="center center">
+    <div layout="column" offset-gt-md="40" offset-gt-sm="35" flex-gt-sm="30" flex-gt-md="20"
+         flex-sm="90" offset-sm="5">
+        <form name="login_form"
+              layout="column"
+              sf-model="loginCtl.formData"
+              sf-form="loginCtl.form"
+              sf-schema="loginCtl.schema"
+              ng-submit="loginCtl.submit(login_form)"></form>
+
+        <md-divider></md-divider>
+        <div layout="row">
+            <md-button ui-sref="account.forget_email">
+                找回密码
+            </md-button>
+            <span flex=""></span>
+            <md-button ui-sref="account.register">
+                用户注册
+            </md-button>
+        </div>
+    </div>
+</div>

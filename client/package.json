@@ -1,0 +1,32 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\"",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "jquery": "^2.2.0",
+    "requirejs": "^2.1.20",
+    "angular-ui-router":"0.2.15",
+    "angular-animate": "^1.4.7",
+    "angular-aria": "^1.4.7",
+    "angular-material":"1.0.1",
+    "angular-material-icons": "^0.6.0",
+    "angular-permission": "^1.0.6",
+    "angular-cookies": "^1.4.7",
+    "angular-schema-form":"^0.8.12",
+    "objectpath": "^1.2.1",
+    "tv4": "^1.2.7",
+    "angular-sanitize": "^1.4.7"
+  },
+  "devDependencies": {
+  }
+}

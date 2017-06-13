@@ -1,0 +1,177 @@
+@import '../node_modules/angular-material/angular-material.css';
+@import '../node_modules/angular-material-icons/angular-material-icons.css';
+.login {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.login.login-blur {
+  background: #394557 no-repeat;
+}
+.login .login-con {
+  background: rgba(255, 255, 255, 0.4);
+  min-height: 200px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+}
+.login .login-con .avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  margin: 0 0 0 -50px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  overflow: hidden;
+}
+.login .login-con .avatar img {
+  width: 100%;
+  height: 100%;
+}
+.login .login-con h1 {
+  text-align: center;
+}
+gridmenu {
+  display: block;
+  float: right;
+}
+.md-errors-spacer {
+  display: none;
+}
+.schema-form-array md-autocomplete-wrap md-input-container {
+  padding-bottom: 0;
+}
+.md-no-errors {
+  margin: 0;
+}
+.md-no-errors .md-errors-spacer {
+  display: none;
+}
+md-autocomplete-wrap md-input-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.letter {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  z-index: 1;
+}
+.letter:before,
+.letter:after {
+  position: absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+}
+.letter,
+.letter:before,
+.letter:after {
+  transition: all 0.3s ease-in-out;
+}
+.letter:before {
+  color: #fff;
+  text-shadow: -1px 0px 1px rgba(255, 255, 255, 0.8), 1px 0px 1px rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+.letter:after {
+  color: rgba(0, 0, 0, 0.11);
+  z-index: 2;
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+}
+.letter:hover:before {
+  color: #fafafa;
+  transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+.letter:hover:after {
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
+/**
+ * Created by NICK on 15/10/16.
+ * email:nick121212@126.com
+ * qq:289412378
+ * copyright NICK
+ */
+#loading-bar .bar {
+  background: #fff;
+}
+#loading-bar .peg {
+  -moz-box-shadow: #fff 1px 0 6px 1px;
+  -ms-box-shadow: #fff 1px 0 6px 1px;
+  -webkit-box-shadow: #fff 1px 0 6px 1px;
+  box-shadow: #fff 1px 0 6px 1px;
+}
+.spinner {
+  margin: 100px auto;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear;
+}
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}

@@ -1,0 +1,12 @@
+{
+"compilerOptions": {
+    "target": "es5",
+    "module": "amd",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "types":["angular", "jquery", "requirejs", "angular-ui-router", "angular-material"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
